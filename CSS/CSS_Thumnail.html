@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-card{
+            background-color: lightgreen;
+            height: 520px;
+            border: 2px solid;
+            width: 350px;
+            position: relative;
+            
+        }
+        .main-card .new{
+            color: white;
+            background-color: red;
+            width: 80px;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            
+        }
+        .main-card .img{
+            height: 350px;
+            width: 100%;
+            position: absolute;
+            margin-top: 50px;
+            z-index: 0;
+          
+        }
+        .main-card .contain{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+        }
+        .main-card .quik{
+            background-color: black;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            z-index: 1;
+            position: absolute;
+            transition: 1s;
+            top: 0;
+            opacity: 0;
+        }
+        .main-card:hover .quik{
+            top: 400px;
+            opacity: 1;
+        }
+    
+        .btn 
+        {
+            padding: 10px 5px;
+            width: 150px;
+            background: #000;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 1px;
+            position: relative;
+            margin: 0 auto;
+            
+        }
+
+        .btn::after{
+            content: '';
+
+            position: absolute;
+            top:50%;
+            left: 50%;
+
+            width: 150px;
+          
+            border:5px solid transparent;
+            ;
+            transform: translate(-50%,-50%);
+
+            transition: .3s;
+        }
+
+        .btn:hover::after 
+        {
+            height: 60px;
+            width: 160px;
+            border:5px solid #000;
+            ;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-card">
+        <div class="row">
+            <div class="quik">
+                QUICK VIEW
+            </div>
+            <div class="new">Offer on <br>sale</div>
+            <div class="img">
+                <img height="100%" width="100%" src="/Dos.img1.jpg" alt="">
+            </div>
+            <div class="contain">
+                <h3>Golder Retriver, Baby Corn Puppy</h3>
+                <p>$55000<del> $60000</del></p>
+                <div class="btn">
+                    Shop Now
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-card">
+        <div class="row">
+            <div class="quik">
+                QUICK VIEW
+            </div>
+            <div class="new">Offer on <br>sale</div>
+            <div class="img">
+                <img height="100%" width="100%" src="/Dos.img1.jpg" alt="">
+            </div>
+            <div class="contain">
+                <h3>Golder Retriver, Baby Corn Puppy</h3>
+                <p>$55000<del> $60000</del></p>
+                <div class="btn">
+                    Shop Now
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
